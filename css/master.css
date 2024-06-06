@@ -1,0 +1,73 @@
+/*RESET GLOBAL*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+}
+
+/*definiamo clearfix per evitare bug con i float */
+clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Background + PNG trasnparent */
+body.containerBgDark {
+    width: 100%;
+    height: 100%;
+    background-color: #38002f;
+    width: 80%;
+    margin: 0 auto;
+}
+.containerBgDark > .zeroTwoWallpaper:first-child {
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.7) blur(2px) ; /* fatto in modo che le scritte si possano vedere */
+    position : fixed; /* cosi se si scrolla giu rimane fermo */
+    z-index: -1; /* serve per mettere sotto il png */
+}
+   
+/* container main per header, div e sezioni */
+.containerForEverything { 
+    margin-top: 2.5%;
+    width: 80%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.493);
+    z-index: -1; 
+    position: fixed;
+    border-radius: 100px;
+}
+
+/* header */
+.container.header {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2%;
+    color: aqua;
+    text-align: center;
+}
+.headerTitle {
+    margin-top: 50px;
+}
+.headerH3 {
+    color: aquamarine; margin-top: 1%;
+}
+.headerText {
+    margin-top: 2%; 
+    color: rgb(247, 80, 163);
+}
+
+/* div dei float */
+.container.float {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+div > img {
+    width: 100px;
+}
