@@ -8,7 +8,7 @@
 }
 
 /*definiamo clearfix per evitare bug con i float */
-clearfix:after {
+.clearfix:after {
     content: "";
     display: table;
     clear: both;
@@ -59,15 +59,53 @@ body.containerBgDark {
 .headerText {
     margin-top: 2%; 
     color: rgb(247, 80, 163);
+    
 }
 
 /* div dei float */
-.container.float {
+
+.container.Members {
     width: 80%;
     margin: 0 auto;
     margin-top: 2%;
+    
+}
+
+/* HELP THERE PLS */
+.colonne > * {
+    float: left;
+    width: calc(90% / 3);
+    margin: 20px;
 }
 
 div > img {
-    width: 100px;
+    width: 110px;
 }
+
+section > .content.Members {
+    padding: 1%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.493);
+    color: aqua;
+}
+
+.immagine{
+    float: left;
+    margin-right: 10%;   
+}
+
+.email {
+    cursor: pointer;
+    color: rgb(81, 81, 224);
+    text-decoration: underline;
+}
+
+.email:hover {
+    color: blue;
+}
+
+.dati.Members > .name, .role, .email {
+   margin-top: 10px;
+}
+
+
