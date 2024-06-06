@@ -26,6 +26,7 @@ body.containerBgDark {
 .containerBgDark > .zeroTwoWallpaper:first-child {
     background-repeat: no-repeat;
     background-size: cover;
+    
     filter: brightness(0.7) blur(2px) ; /* fatto in modo che le scritte si possano vedere */
     position : fixed; /* cosi se si scrolla giu rimane fermo */
     z-index: -1; /* serve per mettere sotto il png */
@@ -76,6 +77,7 @@ body.containerBgDark {
     float: left;
     width: calc(90% / 3);
     margin: 20px;
+    
 }
 
 div > img {
