@@ -31,7 +31,6 @@ body.containerBgDark {
     position : fixed; /* cosi se si scrolla giu rimane fermo */
     z-index: -1; /* serve per mettere sotto il png */
 }
-   
 /* container main per header, div e sezioni */
 .containerForEverything { 
     margin-top: 2.5%;
